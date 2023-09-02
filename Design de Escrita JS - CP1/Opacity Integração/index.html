@@ -1,0 +1,108 @@
+
+<html>
+    <head>
+        <title>TESTE Opacity</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>GYM MASTER</h1>
+        </header>
+
+        <main>
+            <h2 id="textoalvo" class="alvo">Você</h2>
+
+            <section class="planos">
+                <div>
+                    <h2>Plano Flex</h2>
+                </div>
+                <div>
+                    <h2>Plano Gold</h2>
+                </div>
+                <div>
+                    <h2>Plano Platinum</h2>
+                </div>
+            </section>
+        </main>
+
+        <script src="./algoritmo.js"></script>
+
+        <footer>
+            <h2>Todos os direitos reservados</h2>
+        </footer>
+    </body>
+</html>
+
+
+<style>
+    body {
+        margin: 0px;
+    }
+
+    body header {
+        display: flex;
+
+        padding: 30px;
+        background-color: black;
+
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    body header h1 {
+        display: flex;
+        margin-left: 100px;
+        transform: rotate(-5deg);
+    }
+
+    body main {
+        display: grid;
+        justify-items: center;
+
+        gap: 200px;
+        margin-top: 250px;
+        margin-bottom: 150px;
+    }
+
+    body main .planos {
+        display: flex;
+        gap: 150px;
+        color: white
+    }
+
+    body main .planos div {
+        width: 200px;
+        padding: 50px;
+
+        display: flex;
+        justify-content: center;
+
+        box-shadow: rgb(0, 255, 0) -10px -10px;
+
+        background-color: black;
+    }
+
+    body main .alvo {
+        font-family: sans-serif;
+    }
+
+    body footer {
+        display: flex;
+        justify-content: center;
+
+        color: white;
+
+        background-color: black;
+    }
+
+    @keyframes emanecer {
+        from {opacity: 0%}
+        to {opacity: 100%}
+    }
+
+    @keyframes desmanecer {
+        from {opacity: 100%}
+        to {opacity: 0%}
+    }
+</style>
+
